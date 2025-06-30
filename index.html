@@ -123,6 +123,34 @@
             <h2>Feedback</h2>
             <div class="text-content">
                 <p>Espaço para feedback dos clientes.</p>
+            </div>
+             <div>
+              <form action="salvar.php" method="post">
+                <label>Nome:</label><br>
+                <input type="text" name="nome" required><br><br>
+
+                <label>Email:</label><br>
+                <input type="email" name="email" required><br><br>
+
+                <label>Telefone:</label><br>
+                <input type="text" name="telefone" required><br><br>
+
+                <p>Grau de satisfação:</p>
+                <input type="radio" id="msatisfeito"  name="satisfacao">
+                <label for="satisfacao">Muito satisfeito</label>
+                <input type="radio" id="satisfeito" name="satisfacao">
+                <label for="satisfacao">Satisfeito</label>
+                <input type="radio" id="insatisfeito" name="satisfacao">
+                <label for="satisfacao">Insatisfeito</label>
+                <input type="radio" id="minsatisfeito" name="satisfacao">
+                <label for="satisfacao">Muito Insatisfeito</label>
+                <br>
+                <label>Mensagem:</label><br>
+                <textarea  placeholder="(Opcional)" name="mensagem" rows="5" cols="40" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+              </form>
+
                 </div>
         </section>
     </main>
